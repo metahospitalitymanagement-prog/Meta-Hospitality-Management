@@ -1,0 +1,1562 @@
+/* ========== CHEF LUKE PALLADINO MANAGEMENT PROFESSIONAL MEMBERHIP WEBSITE ========== */
+
+/* GLOBAL SETTING */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --green: #102d21;
+
+    --dark-green: #0b2119;
+
+    --gold: #d6a84f;
+
+    --gold-dark: #b88735;
+
+    --cream: #f8f1e6;
+
+    --white: #fffaf1;
+
+    --text: #25251f;
+
+    --muted: #68675f;
+
+    --serif: "playfair Display", Georgia, serif;
+
+    --sans: "DM Sans". Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: var(--sans);
+
+    background: var(--white);
+
+    color: var(--text);
+
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ========== HEADER ========== */
+
+.site-header {
+    min-height: 104px;
+
+    padding: 15px 5.8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 28px;
+    
+    background: #fffaf3;
+}
+
+.brand {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    line-height: 1;
+}
+
+.brand-script {
+
+    font-family: var(--serif);
+
+    font-size: 27px;
+
+    font-style: italic;
+
+    color: var(--green);
+
+    letter-spacing: -1px;
+}
+
+.brand-subtitle {
+
+    margin: 7px 0 6px 38px;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    color: var(--green);
+}
+
+.header-flags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 8px;
+}
+
+.flag-icon {
+
+    width: 25px;
+    height: 17px;
+    display: block;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+
+    .footer-flags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 8px;
+}
+
+.footer.flag-icon {
+
+    width: 25px;
+    height: 17px;
+    display: block;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+}
+
+/* NAVIGATION */
+
+.main-nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.main-nav a {
+
+    font-family: var(--serif);
+
+    font-size: 13px;
+
+    color: #37382f;
+
+    transition: .3s;
+}
+
+.main-nav a:hover {
+
+    color: var(--gold-dark);
+}
+
+
+/* HEADER BUTTON */
+
+.header-cta {
+
+    padding: 12px 20px;
+    
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    border: 1px solid var(--gold);
+
+    border-radius: 5px;
+
+    background: linear-gradients(135deg, #ba2106, #312f2d);
+
+    color: whitesmoke red;
+
+    font-family: var(--serif);
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    transition: .3s;
+}
+
+.header-cta:hover {
+
+    transform: translateY(-3px);
+    filter: brightness(1.05)
+}
+
+/* ========== HERO SECTION ========== */
+
+.hero {
+
+    width: 100;
+
+    min-height: 480px;
+
+    padding: 65px 6.2%;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    color: whitesmoke;
+
+    background:
+       linear-gradient(90deg, rgba(8, 15, 12, 0.55), rgba(8, 15, 12, 0.35), rgba(8, 15, 12, 0.05)),
+       url("lukebackground.png") center / cover no-repeat, #394638;
+}
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(0deg, rgba(10, 18, 13, 15.), transparent);
+}
+
+.hero-content {
+
+    position: relative;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.08);
+
+    z-index: 1;
+}
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.eyebrow {
+
+    margin-bottom: 12px;
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+
+    font-family: var(--serif);
+
+    font-size: clamp(43px, 5.5vw,);
+
+    font-weight: 600;
+
+    line-height: 1.1;
+
+    color: #fffaf1;
+}
+
+.hero-subtitle {
+
+    margin: 5px 0 20px;
+
+    font-family: var(--serif);
+
+    font-size: clamp(24px, 3.1vw, 39px);
+
+    font-style: italic;
+
+    color: #fff4e2
+}
+
+/* ========== MEMBERSHIP SECTION ========== */
+
+.membership-section {
+
+    padding: 43px 5.5% 55px;
+
+    background: var(--cream);
+}
+
+.section-heading {
+
+    margin-bottom: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 24px;
+
+    text-align: center;
+}
+
+.heading-line {
+
+    width: 150px;
+
+    height: 1px;
+
+    background: var(--gold);
+
+}
+
+.dark-eyebrow {
+
+    color: var(--green);
+}
+
+.section-heading h2 {
+
+    font-family: var(--serif);
+
+    font-size: 40px;
+
+    color: var(--green);
+
+    font-weight: 600;
+}
+
+.section-subtitle {
+
+    margin-top: 7px;
+
+    font-family: var(--serif);
+
+    font-size: 14px;
+
+    font-style: italic;
+
+    color: var(--muted);
+}
+
+/* ========== MEMBERSHIP GRID ========== */
+
+.membership-grid {
+
+    width: min(1200px, 100%);
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+    align-items: stretch;
+}
+
+/* MEMEBERSHIP CARD */
+
+.membership-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    border: 1px solid #d9c5a5;
+
+    border-radius: 8px;
+
+    background: var(--white);
+
+    box-shadow: 0 5px 13px rgba(59, 43, 19, .09);
+
+}
+
+.featured-card {
+
+    border: 2px solid var(--gold);
+    box-shadow: 0 8px 20px rgba(59, 43, 19, .13);
+}
+
+.popular-label {
+
+    position: absolute;
+
+    top: 12px;
+
+    right: 12px;
+
+    z-index: 2;
+
+    padding: 6px 9px;
+
+    border-radius: 2px;
+
+    background: #e9bd68;
+
+    color: #241d10;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+/* CARD PHOTOGRAPHS */
+
+.card-image {
+
+    height: 125px;
+
+    flex-shrink: 0;
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-color: #7b806b;
+}
+
+.ordinary-image {
+
+    background-image: url("image/ordinary-pasta.jpg");
+}
+
+.regular-image {
+
+    background-image: url("image/regular-wine-dinner.jpg");
+}
+
+.vip-image {
+    background-image: url("images/vip-coastal-dining.jpg");
+}
+
+/* CARD TITLE AND PRICE */
+
+.card-title {
+
+    min-height: 78px;
+
+    padding: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    background: linear-gradient(135deg, #193b2a, #0b2419);
+}
+
+.card-title h3 {
+
+    font-family: var(--serif);
+
+    font-size: 21px;
+
+    font-weight: 600;
+}
+
+price {
+
+    font-family: var(--serif);
+
+    font-size: 2zpx;
+
+    font-weight: 600;
+
+    color: #fff5df;
+}
+
+/* MEMBERSHIP BENEFITS ALIGNMENT */
+   
+.membership-card{
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.card-content {
+
+    padding: 20px;
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.card-content ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0 0 22px;
+
+    flex: 1;
+}
+
+.card-content li {
+
+    position: relative;
+
+    padding: 0 0 13px 27px;
+
+    font-family: var(--serif);
+
+    font-size: 13px;
+
+    line-height: 1, 6;
+
+    color: #302f29;
+
+    text-align: left;
+
+}
+
+.card-content li::before {
+
+    content: "+";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    color: var(--gold-dark);
+
+    font-size: 16px;
+
+    font-weight: bold;
+    
+}
+
+.card-button {
+
+    margin-top: auto;
+
+    width: 100%;
+
+    flex-shrink: 0;
+
+}
+    
+
+    /* CARD INQUIRY BUTTON */
+
+    .card-button {
+
+        min-height: 43px;
+
+        margin-top: auto;
+
+        padding: 10px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 10px;
+
+        border: 1px solid var (--gold);
+
+        border-radius: 7px;
+
+        color: white;
+
+        background: linear-gradient(135deg, #173a29, #092219);
+
+        font-family: var(--serif);
+
+        font-size: 14px;
+
+        font-weight: 600;
+
+        transition: .3s;
+    }
+
+    .card-button:hover {
+        transform: translateY(-3px);
+        background: #28543b;
+    }
+
+    /* ========== PERSONALIZED MEMBERSHIP CARD ========== */
+
+    .personal-card-section {
+
+        padding: 65px 8%;
+
+        display: grid;
+
+        grid-template-columns: .9fr 1.1fr;
+
+        align-items: center;
+
+        gap: 70px;
+
+        background: linear-gradient(110deg, #e8ddca, #fff8ed, #f1e4d2);
+    }
+
+    /* MEMBERSHIP CARD DESIGN */
+
+    .membership-card-art {
+
+        min-height: 235px;
+
+        padding: 22px 25px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: space-between;
+
+        border: 2px solid #c69d53;
+
+        border-radius: 12px;
+
+        color: #e7c078;
+
+        background: linear-gradient(135deg, #1b3b2b, #071b13);
+
+        box-shadow: 0 16px 30px rgba(40, 35, 24, .23);
+
+        transform: rotate(-3deg);
+    }
+
+    .membership-icon {
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+        display: block;
+        margin: 12px auto 0;
+    }
+
+    .card-art-top {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        font-size: 9px;
+
+        letter-spacing: 2px;
+    }
+
+    .card-monogram {
+
+        font-family: var(--serif);
+
+        font-size: 27px;
+    }
+
+    .card-signature {
+
+        font-family: var(--serif);
+
+        font-size: 35px;
+
+        font-style: italic;
+
+        text-align: center;
+
+        color: #edc16c;
+    }
+
+    .card-italian-stripe {
+
+        width: 95px;
+
+        height: 4px;
+
+        margin: 0 auto;
+
+        display: flex;
+    }
+
+    .card-italian-stripe i {
+
+        flex: 1;
+    }
+
+    .card-italian-stripe i:nth-child(1) {
+        background: #168449;
+    }
+
+    .card-italian-stripe i:nth-child(2) {
+        background: white;
+    }
+
+    .card-italian-stripe i:nth-child(3) {
+        background: #d52b32;
+    }
+
+    .card-art-bottom {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        font-size: 20px;
+
+        line-height: 1.7;
+    }
+
+    .card-art-bottom strong {
+
+        color: white;
+
+        letter-spacing: 2px;
+    }
+
+    .card-footer-text {
+
+        font-size: 7px;
+
+        text-align: center;
+
+        letter-spacing: 2px;
+    }
+
+    /* MEMBERSHIP CARD DESCRIPTION */
+
+    .personal-card-copy h2 {
+
+        margin-bottom: 18px;
+
+        font-family: var(--serif);
+
+        font-size: 39px;
+
+        font-style: italic;
+
+        line-height: 1.2;
+
+        color: var(--green);
+    }
+
+    .personal-card-copy > p:last-child {
+
+        max-width: 620px;
+
+        font-family: var(--serif);
+
+        font-size: 14px;
+
+        line-height: 1.8;
+
+        color: #4d4b43;
+    }
+
+    /* ========== FINAL CONTACT SECTION ========== */
+
+    .welcome-section {
+
+        min-height: 270px;
+
+        padding: 50px 7%;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 40px;
+
+        color: white;
+
+        background: linear-gradient(120deg, #0b2118, #173a29, #0b2118);
+    }
+
+    .welcome-content {
+
+        max-width: 750px;
+
+        text-align: center;
+    }
+
+    .welcome-content h2 {
+
+        margin-bottom: 12px;
+
+        font-family: var(--serif);
+
+        font-size: 45px;
+
+        font-style: italic;
+
+        font-weight: 500;
+
+        color: #fff5e5;
+    }
+
+    .welcome-content > p:not(.eyebrow) {
+
+        font-family: var(--serif);
+
+        font-size: 13px;
+
+        color: #f2ecdf;
+    }
+
+    .welcome-signoff {
+
+        margin-top: 13px;
+
+        color: #e8c78b !important;
+
+        font-size: 15px !important;
+
+        font-style: italic;
+    }
+
+    .footer-stripe {
+
+        width: 95px;
+
+        height: 4px;
+
+        margin: 17px auto 0;
+
+        display: flex;
+    }
+
+    .footer-stripe i {
+
+        flex: 1;
+    }
+
+    .footer-stripe i:nth-child(1) {
+
+        background: #168449;
+    }
+
+    .footer-stripe i:nth-child(2) {
+
+        background: white;
+    }
+
+    .footer-stripe i:nth-child(3) {
+
+        background: #d52b32;
+    }
+
+    /* ========== FOOTER ========== */
+
+    .site-footer {
+
+        padding: 30px 6% 20px;
+
+        display: grid;
+
+        grid-template-columns: auto 1fr auto;
+
+        align-items: center;
+
+        gap: 20px;
+
+        background: #f6ef4e;
+    }
+
+    .footer-brand {
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .footer-brand .brand-script {
+
+        font-size: 23px;
+    }
+
+    .site-footer > p {
+
+        max-width: 390px;
+
+        font-family: var(--serif);
+
+        font-size: 12px;
+
+        color: var(--muted);
+    }
+
+    .site-footer > a:not(.footer-brand) {
+
+        font-size: 11px;
+
+        font-weight: bold;
+    }
+
+    .site-footer small {
+
+        grid-column: 1 / -1;
+
+        padding-top: 15px;
+
+        border-top: 1px solid #dcd9d4;
+
+        text-align: center;
+
+        font-size: 9px;
+
+        color: var(--muted);
+    }
+
+    /* SOCIAL MEDIA FOOTER */
+
+    .site-footer {
+
+        padding: 40px 6% 20px;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1.3fr;
+
+        align-items: center;
+
+        gap: 30px;
+
+        background: #f6efe4;
+    }
+
+    .footer-brand {
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .footer-brand .brand-script {
+
+        font-size: 23px;
+    }
+    
+    .footer-description p{
+
+        max-width: 300px;
+
+        font-family: var(--serif);
+
+        font-size: 13px;
+
+        color: var(--muted);
+    }
+
+    .social-section h3 {
+
+        margin-bottom: 14px;
+
+        font-family: var(--serif);
+
+        font-size: 20px;
+
+        color: var(--green);
+    }
+
+    .social-links {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    .social-links a {
+
+        padding: 9px 13px;
+
+        border: 1px solid #d5bd91;
+
+        border-radius: 4px;
+
+        color: var(--green);
+
+        font-size: 11px;
+
+        font-weight: 600;
+
+        transition: .3s;
+    }
+
+    .social-links a:hover {
+
+        background: var(--green);
+
+        color: white;
+
+        border-color: var(--green);
+    }
+
+    .copyright {
+        grid-column: 1 / -1;
+
+        padding-top: 18px;
+
+        border-top: 1px solid black;
+
+        text-align: center;
+
+        font-size: 10px;
+
+        color: var(--muted);
+    }
+
+    /* MOBILE FOOTER */
+
+    @media (max-width: 768px) {
+        
+        .membership-grid {
+
+            grid-template-columns: 1fr;
+        }
+
+
+        .site-footer {
+
+            grid-template-columns: 1fr;
+
+            justify-items: center;
+
+            text-align: center;
+
+            gap: 22px;
+        }
+
+        .footer-brand {
+
+            align-items: center;
+        }
+
+        .footer-description p{
+            margin: auto;
+        }
+
+        .social-links {
+
+            justify-content: center;
+        }
+
+        .copyright {
+
+            width: 100%;
+        }
+    }
+
+    /* ========== TABLET RESPONSIVENESS ========== */
+
+    @media (max-width: 900px) {
+       
+        .site-header {
+
+            flex-wrap: wrap;
+        }
+
+        .main-nav {
+          
+            order: 3;
+
+            width: 100%;
+
+            justify-content: space-between;
+        }
+
+        .membership-grid {
+
+            gap: 14px;
+        }
+
+        .card-content {
+
+            padding: 15px;
+        }
+
+        .personal-card-section {
+
+            padding: 55px 6%;
+        }
+    }
+
+    /* ========== MOBILE RESPONSIVENESS ========== */
+
+    @media (max-width: 650px) {
+
+        .site-header {
+
+            padding: 16px 6%;
+
+            gap: 15px;
+        }
+
+        .brand-script {
+
+            font-size: 23px;
+        }
+
+        .header-cta {
+
+            padding: 9px 12px;
+
+            font-size: 11px;
+        }
+
+        .main-nav {
+
+            gap: 10px;
+
+            overflow-x: auto;
+        }
+
+        .main-nav a {
+
+            font-size: 11px;
+
+            white-space: nowrap;
+        }
+
+        .hero {
+
+            min-height: 420px;
+
+            background-position: center;
+
+            padding: 50px 25px;
+        }
+
+        .hero h1 {
+
+            font-size: 36px;
+        }
+
+        .hero-subtitle {
+
+            font-size: 27px;
+        }
+
+        .hero-description {
+
+            font-size: 13px;
+        }
+
+        .membership-section {
+
+            padding: 40px 6% 45px;
+        }
+
+        .section-heading {
+
+            gap: 10px;
+        }
+
+        .heading-line {
+
+            width: 25px;
+        }
+
+        .section-heading h2 {
+
+            font-size: 30px;
+        }
+
+        .membership-grid {
+
+            grid-template: 1fr;
+
+            max-width: 440px;
+        }
+
+        .card-image {
+
+            height: 155px;
+        }
+
+        .card-title h3 {
+
+            font-size: 22px;
+        }
+
+        .card-content {
+
+            padding: 18px 20px;
+        }
+
+        .card-content li {
+
+            font-size: 14px;
+        }
+
+        .personal-card-art {
+
+            grid-template-columns: 1fr;
+
+            gap: 40px;
+
+            padding: 55px 8%;
+        }
+
+        .membership-card-art {
+
+            width: 100%;
+
+            max-width: 420px;
+
+            margin: auto;
+
+            min-height: 220px;
+        }
+
+        .personal-card-copy h2 {
+
+            font-size: 34px;
+        }
+
+        .welcome-section {
+
+            flex-direction: column;
+
+            padding: 50px 7%;
+
+            gap: 25px;
+        }
+
+        .welcome-content h2 {
+
+            font-size: 38px;
+        }
+
+        .site-header {
+
+            flex-wrap: wrap;
+        }
+
+        .site-footer {
+
+            grid-template-columns: 1fr;
+
+            justify-items: center;
+
+            text-align: center;
+        }
+
+        .footer-brand {
+
+            align-items: center;
+        }
+
+        .site-footer > p {
+
+            margin: auto;
+        }
+
+        .site-footer small {
+
+            width: 100%;
+        }
+
+    }
+
+
+    /* ========== GLOBAL RESPONSIVE SETTINGS ========== */
+
+    * {
+
+        box-sizing: border-box;
+    }
+
+    html {
+
+        width: 100%;
+
+        overflow-x: hidden;
+
+        scroll-behavior: smooth;
+    }
+
+    body {
+
+        width: 100%;
+
+        margin: 0;
+
+        overflow-x: hidden;
+
+    }
+
+    img {
+
+        max-width: 100%;
+
+        height: auto;
+    }
+
+    /* ========== TABLETS AND SMALL LAPTOPS ========== */
+
+    @media (max-width: 102px) {
+
+        .site-header {
+
+            padding: 18px 4%;
+
+            gap: 20px;
+        }
+
+        .membership-section {
+
+            padding: 60px 4%;
+        }
+
+        .membership-grid {
+
+            gap: 18px;
+        }
+
+        .hero {
+
+            padding: 55px 5%;
+        }
+    }
+
+    /* ========== MOBILE DEVICES ========== */
+
+    @media (max-width: 768px) {
+
+        .site-header {
+
+            flex-direction: column;
+
+            align-items: center;
+
+            padding: 20px;
+        }
+
+        .header-nav {
+
+            width: 100%;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 15px;
+        }
+
+        .hero {
+
+            min-height: 460px;
+
+            padding: 45px 22px;
+
+            background-size: cover;
+
+            background-position: center;
+        }
+
+        .hero-content {
+
+            width: 100%;
+
+            max-width: 100%;
+        }
+
+        .hero h1 {
+
+            font-size: clamp(30px, 8v2, 42px);
+
+            line-height: 1.15;
+        }
+
+        .hero-subtitle {
+
+            font-size: clamp(23px, 6vw, 32px);
+
+            line-height: 1.3;
+        }
+
+        .hero-description {
+
+            font-size: 14px;
+
+            line-height: 1.7;
+        }
+
+        .membership-section {
+
+            padding: 50px 20px;
+        }
+
+        .membership-section h2 {
+
+            font-size: clamp(28px, 7vw, 38px);
+        }
+
+        .membership-grid {
+
+            grid-template-columns: 1fr;
+
+            gap: 25px;
+        }
+
+        .membership-card {
+
+            width: 100%;
+
+            height: auto;
+        }
+
+        .card-content {
+
+            padding: 22px;
+        }
+
+        .site-footer {
+
+            grid-template-columns: 1fr;
+
+            text-align: center;
+        }
+        
+    }
+
+    /* ========== SMALL MOBILE DEVICES ========== */
+
+    @media (max-width: 480px) {
+
+        .hero {
+
+            min-height: 420px;
+
+            padding: 35px 18px;
+        }
+
+        .hero h1 {
+
+            font-size: 32px;
+        }
+
+        .hero h1 {
+
+            font-size: 24px;
+        }
+
+        .membership-section {
+
+            padding: 40px 16px;
+        }
+
+        .membership-card {
+
+            border-radius: 8px;
+        }
+
+        .card-content li {
+
+            font-size: 13px;
+
+            line-height: 1.7;
+        }
+
+        .social-links {
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+        }
+    }
+
+    /* ========== PERSONAL MEMBERSHIP CARD - MOBILE ========== */
+
+    @media screen and (max-width: 768px) {
+
+        .personal-card-section {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 35px;
+            padding: 45px 20px;
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        /* Membership Card */
+        .membership-card-art {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            justify-self: center;
+            box-sizing: border-box;
+        }
+
+        /* Text underneath the card */
+        .personal-card-copy {
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+            margin: 0 auto;
+            grid-column: 1;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        .personal-card-copy h2 {
+            font-size: 30px;
+            line-height: 1.25;
+            margin-bottom: 20px;
+        }
+
+        .personal-card-copy p {
+
+            font-size: 15px;
+            line-height: 1.8;
+            overflow-wrap: break-word;
+        }
+    }
